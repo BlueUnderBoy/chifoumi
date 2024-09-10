@@ -1,9 +1,9 @@
 <% if @comp_move == "rock" %>
-    @outcome = "lost"
+    <% @outcome = "lost" %>
 <% elsif @comp_move = "paper" %>
-    @outcome = "won!"
+    <% @outcome = "won!" %>
 <% else %>
-    @outcome = "tied!" 
+    <% @outcome = "tied!" %>
 <% end %>
 
 <h2>
