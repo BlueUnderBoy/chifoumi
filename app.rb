@@ -7,8 +7,8 @@ end
 
 get("/rock") do
   moves = ["rock", "paper", "scissors"]
-  num = rand(0..2)
-  @comp_move = moves[num]
+  #num = rand(0..2)
+  @comp_move = moves.sample
 
   erb(:rock, {:layout => :layout})
 
@@ -16,8 +16,8 @@ end
 
 get("/paper") do
   moves = ["rock", "paper", "scissors"]
-  num = rand(0..2)
-  @comp_move = moves[num]
+  #num = rand(0..2)
+  @comp_move = moves.sample
 
   erb(:paper, {:layout => :layout})
 
@@ -25,8 +25,8 @@ end
 
 get("/scissors") do
   moves = ["rock", "paper", "scissors"]
-  num = rand(0..2)
-  @comp_move = moves[num]
+  #num = rand(0..2)
+  @comp_move = moves.sample
 
   erb(:scissors, {:layout => :layout})
 
